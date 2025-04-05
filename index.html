@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Online Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="LearnHub">
+                    <span>LearnHub</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="fas fa-user-circle"></i> My Account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="my-courses.html">My Courses</a></li>
+                            <li><a href="logout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="cart.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="my-courses.html">My Courses</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Learn New Skills Online With LearnHub</h1>
+                <p>Choose from over 1000+ online video courses with new additions published every month.</p>
+                <div class="hero-btns">
+                    <a href="courses.html" class="btn btn-primary">Browse Courses</a>
+                    <a href="register.html" class="btn btn-outline">Join For Free</a>
+                </div>
+            </div>
+            <img src="images/hero-image.png" alt="Online Learning" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Top Categories</h2>
+                <p>Explore our wide selection of categories to find the perfect course for you.</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/category-web.jpg" alt="Web Development">
+                    </div>
+                    <div class="category-info">
+                        <h3>Web Development</h3>
+                        <p>Learn to build modern websites and web applications</p>
+                        <a href="courses.html?category=web" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/category-design.jpg" alt="Design">
+                    </div>
+                    <div class="category-info">
+                        <h3>Design</h3>
+                        <p>Master UI/UX, graphic design and more</p>
+                        <a href="courses.html?category=design" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/category-business.jpg" alt="Business">
+                    </div>
+                    <div class="category-info">
+                        <h3>Business</h3>
+                        <p>Develop essential business and management skills</p>
+                        <a href="courses.html?category=business" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/category-marketing.jpg" alt="Marketing">
+                    </div>
+                    <div class="category-info">
+                        <h3>Marketing</h3>
+                        <p>Learn digital marketing strategies and tools</p>
+                        <a href="courses.html?category=marketing" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Section -->
+    <section class="courses">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Courses</h2>
+                <p>Discover our most popular courses loved by thousands of students.</p>
+            </div>
+            
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="images/course-1.jpg" alt="Complete Web Development Bootcamp">
+                        <div class="course-price">
+                            $89.99
+                            <span class="course-discount">$129.99</span>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-meta">
+                            <div class="course-instructor">
+                                <img src="images/instructor-1.jpg" alt="John Smith">
+                                <span>John Smith</span>
+                            </div>
+                            <div class="course-category">
+                                <i class="fas fa-tag"></i> Web Development
+                            </div>
+                        </div>
+                        <h3 class="course-title"><a href="course-detail.html">Complete Web Development Bootcamp</a></h3>
+                        <p class="course-desc">Learn to build websites with HTML, CSS, JavaScript, React and more in this comprehensive course.</p>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(1,245)</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i> 5,678
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="images/course-2.jpg" alt="UX/UI Design Masterclass">
+                        <div class="course-price">
+                            $79.99
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-meta">
+                            <div class="course-instructor">
+                                <img src="images/instructor-2.jpg" alt="Sarah Johnson">
+                                <span>Sarah Johnson</span>
+                            </div>
+                            <div class="course-category">
+                                <i class="fas fa-tag"></i> Design
+                            </div>
+                        </div>
+                        <h3 class="course-title"><a href="course-detail.html">UX/UI Design Masterclass</a></h3>
+                        <p class="course-desc">Master user experience and interface design principles with this hands-on course.</p>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(892)</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i> 3,421
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="images/course-3.jpg" alt="Digital Marketing Complete Course">
+                        <div class="course-price">
+                            $69.99
+                            <span class="course-discount">$99.99</span>
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-meta">
+                            <div class="course-instructor">
+                                <img src="images/instructor-3.jpg" alt="Michael Chen">
+                                <span>Michael Chen</span>
+                            </div>
+                            <div class="course-category">
+                                <i class="fas fa-tag"></i> Marketing
+                            </div>
+                        </div>
+                        <h3 class="course-title"><a href="course-detail.html">Digital Marketing Complete Course</a></h3>
+                        <p class="course-desc">Learn SEO, social media marketing, email marketing and more to grow any business.</p>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(756)</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i> 2,987
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="images/course-4.jpg" alt="Python Programming for Beginners">
+                        <div class="course-price">
+                            $59.99
+                        </div>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-meta">
+                            <div class="course-instructor">
+                                <img src="images/instructor-4.jpg" alt="David Wilson">
+                                <span>David Wilson</span>
+                            </div>
+                            <div class="course-category">
+                                <i class="fas fa-tag"></i> Programming
+                            </div>
+                        </div>
+                        <h3 class="course-title"><a href="course-detail.html">Python Programming for Beginners</a></h3>
+                        <p class="course-desc">Start your programming journey with Python, one of the most popular languages today.</p>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(1,532)</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i> 6,543
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="courses.html" class="btn btn-primary">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="images/featured-image.jpg" alt="Why Choose Us">
+                </div>
+                <div class="featured-text">
+                    <h2>Why Choose LearnHub?</h2>
+                    <p>LearnHub provides you with the most flexible and interactive online learning experience.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Expert Instructors</h4>
+                                <p>Learn from industry experts who are passionate about teaching.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Lifetime Access</h4>
+                                <p>Get lifetime access to all the courses you purchase.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Interactive Learning</h4>
+                                <p>Engage with interactive lessons, quizzes, and projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="register.html" class="btn btn-primary">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Students Say</h2>
+                <p>Hear from our students about their learning experience with LearnHub.</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>LearnHub has completely transformed my career. The courses are well-structured and the instructors are knowledgeable. I was able to land a new job after completing just two courses!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-1.jpg" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>I've taken many online courses before, but LearnHub stands out for its quality content and engaging teaching methods. The hands-on projects really helped me apply what I learned.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-2.jpg" alt="Michael Chen">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Data Scientist</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>As a busy professional, I appreciate the flexibility LearnHub offers. I can learn at my own pace and the mobile app makes it easy to study on the go. Highly recommended!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-3.jpg" alt="Emma Rodriguez">
+                        <div class="author-info">
+                            <h4>Emma Rodriguez</h4>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Learning?</h2>
+            <p>Join thousands of students who are advancing their careers with our courses.</p>
+            <div class="cta-btns">
+                <a href="register.html" class="btn btn-primary">Get Started</a>
+                <a href="courses.html" class="btn btn-outline">Browse Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About LearnHub</h3>
+                    <p>LearnHub is a premier online learning platform offering high-quality courses across various disciplines to help you advance your career and skills.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="courses.html?category=web">Web Development</a></li>
+                        <li><a href="courses.html?category=design">Design</a></li>
+                        <li><a href="courses.html?category=business">Business</a></li>
+                        <li><a href="courses.html?category=marketing">Marketing</a></li>
+                        <li><a href="courses.html?category=programming">Programming</a></li>
+                        <li><a href="courses.html?category=data">Data Science</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Learning St, Education City</li>
+                        <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> support@learnhub.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
